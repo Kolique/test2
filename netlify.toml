@@ -1,0 +1,8 @@
+[build]
+  command = "npm install -g pnpm && pnpm install && pnpm build:client"
+  publish = "dist/spa"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
